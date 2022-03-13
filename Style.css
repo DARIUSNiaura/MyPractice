@@ -1,9 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+
+:root {
+  --bg-clr1: #7541c8;
+  --bg-clrq: #a775f1;
+  --bg-clr2: #48556a;
+  --bg-clr3: #ffffff;
+  --bg-clr4: #19212e;
+
+  --font-clr1: #9aa2ad;
+  --font-clr2: #fffff6;
+  --font-clr3: #555d6c;
+
+  --fstyle-1: "Roboto", sans-serif;
+}
+
 * {
   margin: 0;
-  pading: 0;
+  padding: 0;
   box-sizing: border-box;
+  border: 2px dotted red;
+}
+
+html {
+  margin: 6rem;
+}
+
+body {
+  display: grid;
+  font-family: var(--fstyle-1);
 }
 
 div {
   border: 1px solid black;
+}
+
+.imgtag > img {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+section {
+  border-radius: 1.5rem;
+}
+
+.opinion1 {
+  position: relative;
+  background-color: var(--bg-clr1);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+}
+
+.opinion2 {
+  background-color: var(--bg-clr2);
+}
+
+.opinion3,
+.opinion4 {
+  background-color: var(--bg-clr3);
+}
+
+.opinion5 {
+  background-color: var(--bg-clr4);
+}
+
+.gclass {
+  color: var(--font-clr1);
+}
+
+.nametag {
+  position: absolute;
 }
